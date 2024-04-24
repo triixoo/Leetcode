@@ -17,12 +17,12 @@ public class ClimbingStairs {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        ClimbingStairs climbingStairs = new ClimbingStairs();
+        ClimbingStairs solution = new ClimbingStairs();
 
         System.out.print("Enter the number of steps: ");
         int n = scanner.nextInt();
 
-        System.out.println("Number of distinct ways to climb to the top: " + climbingStairs.climbStairs(n));
+        System.out.println("Number of distinct ways to climb to the top: " + solution.climbStairs(n));
 
         scanner.close();
     }
