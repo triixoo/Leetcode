@@ -14,5 +14,4 @@ public class MininumBitFlips {
             return count;
         }
     }
-
 }
