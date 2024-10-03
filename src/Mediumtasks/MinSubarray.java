@@ -38,21 +38,4 @@ public class MinSubarray {
         // If we found a valid subarray to remove
         return (minLength == nums.length) ? -1 : minLength;
     }
-
-    public static void main(String[] args) {
-        Solution solution = new Solution();
-
-        int[] nums1 = {3, 1, 4, 2};
-        int p1 = 6;
-        System.out.println(solution.minSubarray(nums1, p1));  // Output: 1
-
-        int[] nums2 = {6, 3, 5, 2};
-        int p2 = 9;
-        System.out.println(solution.minSubarray(nums2, p2));  // Output: 2
-
-        int[] nums3 = {1, 2, 3};
-        int p3 = 3;
-        System.out.println(solution.minSubarray(nums3, p3));  // Output: 0
-    }
 }
-
