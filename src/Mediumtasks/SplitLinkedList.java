@@ -43,6 +43,34 @@ public class SplitLinkedList {
             return result;
         }
     }
+    public static void main(String[] args) {
+        SplitLinkedList splitList = new SplitLinkedList();
+        Solution solution = splitList.new Solution();
+
+
+        ListNode head = splitList.new ListNode(1);
+        head.next = splitList.new ListNode(2);
+        head.next.next = splitList.new ListNode(3);
+        head.next.next.next = splitList.new ListNode(4);
+        head.next.next.next.next = splitList.new ListNode(5);
+
+        int k = 3;
+
+
+        ListNode[] result = solution.splitListToParts(head, k);
+
+
+        for (int i = 0; i < result.length; i++) {
+            System.out.print("Chapter " + (i + 1) + ": ");
+            ListNode current = result[i];
+            while (current != null) {
+                System.out.print(current.val + " ");
+                current = current.next;
+            }
+            System.out.println();
+        }
+    }
 }
+
 
 
