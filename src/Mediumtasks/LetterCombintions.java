@@ -2,8 +2,6 @@ package Mediumtasks;
 
 import java.util.ArrayList;
 import java.util.List;
-
-public class LetterCombinations {
     class Solution {
             public static final String[] KEYPAD = {
                     "",
@@ -37,4 +35,4 @@ public class LetterCombinations {
             }
         }
     }
-}
+
